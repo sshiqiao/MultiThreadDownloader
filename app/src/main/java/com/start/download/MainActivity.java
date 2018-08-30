@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity  implements EasyPermissions.
     }
 
     public void startDownload() {
-        final MutiThreadDownloadTask task = new MutiThreadDownloadTask("http://116.62.9.17:8080/FileRes/map.jpg", Environment.getExternalStorageDirectory() + File.separator + "map.jpg");
+        final MutiThreadDownloadTask task = new MutiThreadDownloadTask("http://116.62.9.17:8080/examples/2.mp4", Environment.getExternalStorageDirectory() + File.separator + "2.mp4");
         task.setOnProgressUpdateListener(new MutiThreadDownloadTask.OnProgressUpdateListener() {
             @Override
             public void onProgressUpdate(float progress, boolean isCompleted) {
